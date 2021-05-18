@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="./css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">  
+    <script type="text/javascript" src="js\index.js"></script>
+    <title>PadWrite | Welcome</title>
+</head>
+<body>
+    <header>
+
+        <nav>
+            <div class="logo">
+                <h1>Pad<span class="write">Write</span>X<span style='font-size:40px;'>&#128153;</span></h1>
+            </div>
+            <div class="btn" id="my_btn">
+                <a href=""><button> &#10011; <b>Add New Note</b></button></a>
+            </div>
+        </nav>
+
+        <div class="main">
+            <button onclick="typeWriter()" class="main_btn">Welcome To PadWriteX</button>
+          
+            <p id="typing_effect"> </p>
+        </div>
+    </header>
+    
+                            <!-- The Modal Box -->
+    <div class="center">
+        <div class="my_modal">
+            <div class="modal_header">
+                <h2 class="mid">Create A new Love Note</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal_body">
+                <form action="localhost:8090/api/v1/new_Note/" method="post">
+                    <div class="data">
+                        <label for="Title">Note Title</label>
+                        <input type="text" value="Enter your Note Title"/>
+                    </div>
+                    <div class="data">
+                        <label for="Title">Note Body</label>
+                        <textarea name="" id="" cols="30" rows="1">Create  Your Note Here</textarea>
+                    </div>
+                    <div class="note_btn">
+                       <button type="submit">Save Note</button>
+                       <button type="reset">Camcel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
