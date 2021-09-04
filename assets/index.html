@@ -12,7 +12,6 @@
 </head>
 <body>
     <header>
-
         <nav>
             <div class="logo">
                 <h1>Pad<span class="write">Write</span>X<span style='font-size:40px;'>&#128153;</span></h1>
@@ -39,16 +38,14 @@
             <div class="modal_body">
                 <form action="localhost:8090/api/v1/new_Note/" method="post">
                     <div class="data">
-                        <label for="Title">Note Title</label>
-                        <input type="text" value="Enter your Note Title"/>
+                        <input type="text" placeholder="Enter your Note Title"/>
                     </div>
                     <div class="data">
-                        <label for="Title">Note Body</label>
-                        <textarea name="" id="" cols="30" rows="1">Create  Your Note Here</textarea>
+                        <textarea name="text" placeholder="Tell Your Story" id="" cols="30" rows="1"></textarea>
                     </div>
                     <div class="note_btn">
                        <button type="submit">Save Note</button>
-                       <button type="reset">Camcel</button>
+                       <button type="reset">Cancel</button>
                     </div>
                 </form>
             </div>

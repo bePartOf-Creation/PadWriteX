@@ -54,7 +54,6 @@ button:hover{
     font-weight: bold;
     background-color: #0078d7;
     color:black;
-   
 }
 #typing_effect{
     display: flex;
@@ -77,39 +76,59 @@ button:hover{
   left: 50%;
   transform:translate(-50%,-50%);
   height: 50vh;
-  width: 40vw;
-  padding: 1rem;
+  width: 50vw;
 }
 
 .modal_header{
   display:flex;
   justify-content: space-between;
+  margin:  2rem;
 }
 .modal_body{
   display: flex;
   flex-direction: column;
+  height: 2rem;
 }
 
 .data{
   margin:  2rem;
+  border-style: 1rem solid #901632 ;
   display: flex;
   flex-direction: column;
-  height: 2rem;
+}
+
+input[type=text]{
+    border:none;
+    border-bottom: 0.1rem solid #901632;
+    padding: 9px 20px;
+    background-color: azure;
+}
+textarea[name=text]{
+    border:none;
+    border-bottom: 0.1rem solid #901632;
+    padding: 9px 20px;
+    background-color: azure;
 }
 .note_btn{
    display: flex;
-   justify-content: space-between;
-  
-   width: 40%;
+   justify-content: center;
+   position: relative;
 }
 
 .note_btn button{
   display: flex;
-  align-items: center;
-  padding: .3rem;
-  box-shadow: 2px 3px black;
+  padding: .4rem;
+  position:absolute;
+  box-shadow: 2px 3px azure;
   margin:  0.7rem;
+  background-color: black;
+  color: azure;
  }
+
+ .note_btn button:hover{
+    color: black;
+    background-color: azure;
+   }
 
 
 

@@ -1,4 +1,5 @@
 package com.example.todoApp.api.cotrollers.apiResponse;
+
 import lombok.Getter;
 
 @Getter
@@ -14,7 +15,7 @@ public enum APIResponseMessage {
 
     private final String message;
 
-    APIResponseMessage(String message){
+    APIResponseMessage(String message) {
         this.message = message;
     }
 

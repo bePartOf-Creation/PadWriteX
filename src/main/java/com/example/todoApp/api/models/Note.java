@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
@@ -16,7 +17,7 @@ import java.time.LocalDateTime;
 @Table(
         name = "note",
         uniqueConstraints = {
-                @UniqueConstraint(name = "id_is_uniquely", columnNames = "id" )
+                @UniqueConstraint(name = "id_is_uniquely", columnNames = "id")
         }
 )
 @Builder
@@ -35,5 +36,7 @@ public class Note {
     private Long id;
     private String title;
     private String noteBody;
+
+    @CreationTimestamp
     private LocalDateTime dateCreated;
 }

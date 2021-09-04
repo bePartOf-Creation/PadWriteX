@@ -6,7 +6,7 @@ import lombok.NonNull;
 
 @Builder
 @Data
-public class APIResponse {
+public class ApiResponse {
     @NonNull
     private boolean isSuccessful;
 

@@ -8,10 +8,16 @@ import java.util.List;
 
 public interface NoteService {
     void createANewNote(NoteDTO noteDTO);
-    void deleteById(Long id) throws NoteException;
-    void updateByTitle(Long id,String title) throws NoteException;
-    void updateANote(Long id,NoteDTO noteDTO) throws NoteException;
-    Note findNoteById(Long id) throws NoteException;
-    List<NoteDTO> getAllNotes();
 
+    void deleteById(Long id) throws NoteException;
+
+    Note findNoteById(Long id) throws NoteException;
+
+    void updateByTitle(Long id, String title) throws NoteException;
+
+    void updateANote(Long id, NoteDTO noteDTO) throws NoteException;
+
+    List<Note> findNotesInDescOrder();
+
+    List<NoteDTO> getAllNotes();
 }
